@@ -1,0 +1,2 @@
+BindingResidueIDs:15 16 17 18 19 20 23 29 31
+BindingSiteCenter:
