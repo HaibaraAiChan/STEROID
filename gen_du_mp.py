@@ -97,7 +97,7 @@ if __name__ == "__main__":
     P_NUM = 1
     p = Pool(P_NUM)
     for i in range(P_NUM):
-        p.apply_async(worker, args=(aux_filename_list[size / P_NUM * i: size / P_NUM * (i + 1)], args,))
+        p.apply_async(worker, args=(aux_filename_list[int(size / P_NUM) * i: int(size / P_NUM) * (i + 1)], args,))
 
     p.close()
     p.join()
